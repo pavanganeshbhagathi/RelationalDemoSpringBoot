@@ -48,7 +48,7 @@ public class Course {
 	private List<Review> reviews = new ArrayList<>();
 	
 	@ManyToMany(mappedBy="courses",cascade = {CascadeType.PERSIST,CascadeType.REMOVE},fetch = FetchType.LAZY)
-	@JsonIgnore
+
 	private List<Student> students = new ArrayList<>();
 	
 	@UpdateTimestamp

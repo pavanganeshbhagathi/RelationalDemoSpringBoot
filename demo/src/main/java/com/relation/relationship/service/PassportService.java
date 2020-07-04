@@ -1,5 +1,8 @@
 package com.relation.relationship.service;
 
+import java.util.List;
+import java.util.Optional;
+
 import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +27,13 @@ public class PassportService {
 		
 		Passport save = passportRepo.save(pass);
 		return  save ;
+	}
+	
+	public List<Passport> getDataPassport()
+	{
+		
+		 List<Passport> findAll = passportRepo.findAll();
+		return findAll;
+		
 	}
 }
