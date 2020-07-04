@@ -14,7 +14,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @SpringBootApplication
 @ComponentScan({"com.relation.relationship.controller"})
-@ComponentScan({"com.relation.relationship.service"})
 @EntityScan({ "com.relation.relationship.model" })
 @EnableJpaRepositories({ "com.relation.relationship.reposistry"})
 @EnableTransactionManagement
